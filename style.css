@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/* Селектор идентификатора*/
+#header {
+    font-family: monospace; /* Явно заданный моноширинный шрифт */
+    font-size: 24px;
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+/* Табличная верстка */
+table.layout-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Селектор потомков */
+table.layout-table td.content-cell {
+    padding: 25px;
+    vertical-align: top;
+}
+
+/* Селектор дочерних элементов */
+.radio-group > label {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Отступы */
+input[type="text"] {
+    width: 200px;
+    padding: 8px 12px; /* В пикселях */
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* псевдо */
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 12px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+/* резы */
+#result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#result-table th, #result-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* надо ли оно вообще */
+#result-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
