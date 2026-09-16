@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Lab 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="layout-table">
+        <!-- Шапка -->
+        <tr>
+            <td colspan="2" id="header">
+                Балкуев Давид Русланович, Группа P3132, Вариант: [УКАЖИ_ВАРИАНТ]
+            </td>
+        </tr>
+        
+        <!-- Основа -->
+        <tr>
+            <!-- Левая колонка: График -->
+            <td class="content-cell canvas-container">
+                <canvas id="graph" width="400" height="400"></canvas>
+            </td>
+            
+            <!-- Правая колонка: Форма -->
+            <td class="content-cell form-container">
+                <form id="check-form">
+                    <div class="input-group">
+                        <label for="x-input">Координата X (-3 ... 5):</label>
+                        <input type="text" id="x-input" name="x" placeholder="-3 ... 5" required>
+                        <div class="error" id="x-error"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="y-input">Координата Y (-5 ... 3):</label>
+                        <input type="text" id="y-input" name="y" placeholder="-5 ... 3" required>
+                        <div class="error" id="y-error"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Радиус R:</label>
+                        <div class="radio-group" id="r-group">
+                            <label><input type="radio" name="r" value="1" required> 1</label>
+                            <label><input type="radio" name="r" value="2"> 2</label>
+                            <label><input type="radio" name="r" value="3"> 3</label>
+                            <label><input type="radio" name="r" value="4"> 4</label>
+                            <label><input type="radio" name="r" value="5"> 5</label>
+                        </div>
+                        <div class="error" id="r-error"></div>
+                    </div>
+
+                    <button type="submit">Проверить</button>
+                </form>
+            </td>
+        </tr>
+        
+        <!-- Таблица резов -->
+        <tr>
+            <td colspan="2" class="content-cell">
+                <table id="result-table">
+                    <thead>
+                        <tr>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>R</th>
+                            <th>Результат</th>
+                            <th>Время (Местное)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="result-body">
+                        <!-- Данные сюды -->
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
